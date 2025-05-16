@@ -1,4 +1,4 @@
-# Inferix Sudoku
+# PyGame Project - Sudoku
 
 A clean, fully playable Sudoku game built in Python using `pygame`. Each time you launch the game, a new randomly generated and solvable puzzle is presented. You can interactively fill in values, auto-solve, or check your solution with a centered popup response.
 
@@ -17,7 +17,6 @@ A clean, fully playable Sudoku game built in Python using `pygame`. Each time yo
 
 ## 🕹️ Controls
 
-_|_______________________________________|_
  | Key       | Action                    |
  |-----------|---------------------------|
  | Click     | Select a cell             |
@@ -27,7 +26,6 @@ _|_______________________________________|_
  | `S`       | Auto-solve current puzzle |
  | `C`       | Check your solution       |
  | `Q`       | Quit the game             |
--|---------------------------------------|-
 
 ---
 
