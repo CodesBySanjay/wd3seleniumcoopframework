@@ -1,54 +1,91 @@
-# PyGame Project - Sudoku
+# 🧠 Sudoku - Python Backtracking GUI Game
 
-A clean, fully playable Sudoku game built in Python using `pygame`. Each time you launch the game, a new randomly generated and solvable puzzle is presented. You can interactively fill in values, auto-solve, or check your solution with a centered popup response.
-
-## 🎮 Features
-
-- ✅ **Random Sudoku generation** each run
-- 🧠 **Backtracking-based solver**
-- 🎯 **Manual input** via mouse and keyboard
-- 🟢 **Check solution** with a popup message (Correct / Incorrect)
-- ⚡ **Auto-solve** option (instantly fills correct solution)
-- ✏️ **Grid selection & key input**
-- 🎨 **Fonts and layout auto-scaled to fit perfectly**
-- 🔁 **Reset (new puzzle) anytime**
+Welcome to the **Sudoku** project — a PyGame-based Sudoku puzzle generator and solver using backtracking, designed with a user-friendly GUI.
 
 ---
 
-## 🕹️ Controls
+## 🎯 Features
 
- | Key       | Action                    |
- |-----------|---------------------------|
- | Click     | Select a cell             |
- | 1–9       | Input a digit             |
- | 0 / Delete / Backspace | Clear cell   |
- | `R`       | Generate new puzzle       |
- | `S`       | Auto-solve current puzzle |
- | `C`       | Check your solution       |
- | `Q`       | Quit the game             |
-
----
-
-## 🧩 Gameplay Preview
-
-[![Empty Sudoku Sample](img/EmptyGrids.png)]
-
-- Green "Correct!" popup appears if your solution is right.
-[![Correct Sudoku Sample](img/Correct.png)]
-
-- Red "Incorrect!" popup if any rule is broken.
-[![Incorrect Sudoku Sample](img/Incorrect.png)]
+- ✅ **Random Puzzle Generation** every run (guaranteed solvable)
+- 🎮 **GUI built with `pygame`**
+- ✍️ Click cells to input numbers
+- 🧠 **Backtracking Solver** (Press `S`)
+- 🧪 **Check Your Solution** (Press `C`)
+- 🔄 Generate a new puzzle anytime (Press `N`)
+- ✅ Visual validation ("Correct"/"Incorrect" popup)
+- 👀 Clean, legible fonts and layout
 
 ---
 
-## 🚀 Getting Started...
+## 🖼️ Proof of Functionality
 
-### Prerequisites
+Screenshots stored in the [`img/`](img/) folder:
 
-- Python 3.x
-- `pygame` library
+- Puzzle screen with inputs
+- Solved board display
+- Correctness check message
 
-### Installation
+---
+
+## ⌨️ Controls
+
+| Key | Action |
+|-----|--------|
+| S   | Auto-solve puzzle |
+| C   | Check current input |
+| N   | New puzzle |
+| Q   | Quit the game |
+
+Click on a cell and type digits `1-9` to manually play.
+
+---
+
+## 📁 Project Structure
+
+```
+Sudoku/
+├── img/                # Screenshots folder
+├── Sudoku.py           # Main game file
+├── README.md           # Project description
+└── LICENSE
+```
+
+---
+
+## 🧠 Algorithm Used
+
+This game uses a **recursive backtracking** algorithm that:
+
+1. Fills the board with a complete valid solution
+2. Removes a number of cells to create a playable puzzle
+3. Solves the puzzle again using the same logic to ensure uniqueness
+
+---
+
+## 📌 Requirements
+
+- Python 3.6+
+- `pygame` (`pip install pygame`)
+
+---
+
+## 🚀 Run the Game
 
 ```bash
-pip install pygame
+python3 Sudoku.py
+```
+
+Make sure your terminal has access to GUI display (macOS/Linux may require permissions).
+
+---
+
+## 🛠️ Dev Info
+
+Created by [CodesBySanjay](https://github.com/CodesBySanjay) 🎓  
+Project Branch: `Sudoku` in [Python Repo](https://github.com/CodesBySanjay/Python)
+
+---
+
+## 🕹️ More Projects Coming Soon
+
+Each will have its own dedicated branch and README.
